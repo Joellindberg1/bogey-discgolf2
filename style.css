@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+
+#layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr .5fr 3fr 0.5fr;
+    grid-template-areas: 
+    "header header header header"
+    "navbar h1 h1 h1"
+    "navbar mainbox mainbox mainbox"
+    "footer footer footer footer";
+    grid-gap: 0.4rem;
+    margin: 10px;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-template-areas: 
+    "frakt instagram leverans";
+    
+}
+
+h1 {
+    grid-area: h1;
+    background-color: whitesmoke;
+}
+
+#mainbox {
+    grid-area: mainbox;
+    background-color: whitesmoke;
+}
+
+#navbar {
+    grid-area: navbar;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+}
